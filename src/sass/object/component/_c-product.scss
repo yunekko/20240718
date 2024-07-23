@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.c-product-category {
+  padding: myrem(5) myrem(30);
+  font-size: myrem(14);
+  font-weight: bold;
+  color: $white;
+  background-color: $black;
+}
+
+.c-product-category2 {
+  padding: myrem(3) myrem(25);
+}
+
+.c-product-year {
+  padding: myrem(5) myrem(20);
+  font-size: myrem(14);
+  font-weight: bold;
+  border: 1px solid $red;
+}
+
+.c-product-year2 {
+  padding: myrem(2) myrem(23);
+}

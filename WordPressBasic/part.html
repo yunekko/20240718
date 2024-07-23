@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
     <!-- meta情報 -->
     <title>CODO ASSIST</title>
-    <meta
-      name="description"
-      content="世界を「アッ！」と驚かせる当たり前を。お客様の「アッ！」を楽しみに。
-それが我々が目指す製品コンセプトです。
-だからこそ面白く、そして遊びごごろを大切にします。
-お客様の笑顔を見たい。
-アッと驚く体験をぜひ手に取ってみてください。"
-    />
     <meta name="keywords" content="建築" />
 
     <!-- ogp -->
@@ -20,7 +15,10 @@
       property="og:url"
       content="https://xs589126.xsrv.jp/codo_assist_test/"
     />
-    <!-- <meta property="og:image" content="https://xs589126.xsrv.jp/codo_assist_test/images/salon__picture-pc.jpg" /> -->
+    <meta
+      property="og:image"
+      content="https://xs589126.xsrv.jp/codo_assist_test/images/fv1.jpg"
+    />
     <meta property="og:site_name" content="CODO ASSIST" />
     <meta
       property="og:description"
@@ -48,18 +46,1150 @@
     />
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- JavaScript -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script defer src="./js/script.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
   </head>
 
   <body>
-    <header class="">ヘッダー</header>
+    <header class="p-header l-header js-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="会社のロゴ"
+          /></a>
+        </h1>
+        <nav class="p-header__nav js-drawer">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item"><a href="#">ホーム</a></li>
+            <li class="p-header__nav-item"><a href="#">お知らせ</a></li>
+            <li class="p-header__nav-item"><a href="#">製品一覧</a></li>
+            <li class="p-header__nav-item"><a href="#">我々について</a></li>
+            <li class="p-header__nav-item"><a href="#">採用情報</a></li>
+            <li class="p-header__nav-item"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="p-header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
     <main>
-      <div class="l-inner"></div>
+      パーツ作成！！！！！！！！！！
+      <div class="l-inner">
+        <!-- ボタン -->
+        <div>
+          <a class="c-btn" href="#">more</a>
+        </div>
+        <div>
+          <a class="c-btn c-btn--white" href="#">more</a>
+        </div>
+
+        <!-- セクションタイトル -->
+        <h2 class="c-section-title">news</h2>
+        <h2 class="c-section-subtitle">お知らせ</h2>
+
+        <!-- ページネーション -->
+      </div>
+      <!-- fv -->
+      <div class="p-fv l-fv">
+        <!-- Slider main container -->
+        <div class="swiper1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper swiper1-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="p-fv__image">
+                <img src="./assets/images/fv1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-fv__image">
+                <img src="./assets/images/fv2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="p-fv__image">
+                <img src="./assets/images/fv3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- top news -->
+      <section class="p-top-news l-top-news">
+        <div class="p-top-news__wrapper">
+          <div class="p-top-news__inner">
+            <div class="p-top-news__titles">
+              <h2 class="c-section-title">news</h2>
+              <h2 class="c-section-subtitle">お知らせ</h2>
+            </div>
+            <ul class="p-top-news__list">
+              <li class="p-top-news__item">
+                <a href="#">
+                  <div class="p-top-news__info">
+                    <p class="c-news-category">news</p>
+                    <time
+                      class="c-news-date p-top-news__date"
+                      datetime="2035-01-01"
+                      >2035.01.01</time
+                    >
+                  </div>
+                  <p class="c-news-text p-top-news__text">TVCMが放映されます</p>
+                </a>
+              </li>
+              <li class="p-top-news__item">
+                <a href="#">
+                  <div class="p-top-news__info">
+                    <p class="c-news-category c-news-category--black">採用</p>
+                    <time
+                      class="c-news-date p-top-news__date"
+                      datetime="2035-01-01"
+                      >2035.01.01</time
+                    >
+                  </div>
+                  <p class="c-news-text p-top-news__text">ADを募集します</p>
+                </a>
+              </li>
+              <li class="p-top-news__item">
+                <a href="#">
+                  <div class="p-top-news__info">
+                    <p class="c-news-category">カテゴリー</p>
+                    <time
+                      class="c-news-date p-top-news__date"
+                      datetime="2035-01-01"
+                      >2035.01.01</time
+                    >
+                  </div>
+                  <p class="c-news-text p-top-news__text">TVCMが放映されます</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="p-top-news__btn">
+            <a class="c-btn" href="#">more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- top product -->
+      <section class="p-top-product">
+        <div class="l-inner">
+          <div class="p-top-product__inner">
+            <h2 class="c-section-title p-top-product__title">products</h2>
+            <h2 class="c-section-subtitle p-top-product__subtitle">製品情報</h2>
+            <ul class="p-top-product__list">
+              <li class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </li>
+              <li class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </li>
+              <li class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </li>
+            </ul>
+            <div class="p-top-product__btn">
+              <a class="c-btn" href="#">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 我々について -->
+      <section class="p-common-company l-common-company">
+        <div class="l-inner">
+          <div class="p-common-company__inner">
+            <h2 class="c-section-title p-common-company__title">company</h2>
+            <h2 class="c-section-subtitle p-common-company__subtitle">
+              我々について
+            </h2>
+            <p class="p-common-company__catch">
+              世界を「アッ！」と驚かせる<br />
+              当たり前を
+            </p>
+            <p class="p-common-company__text">
+              お客様の「アッ！」を楽しみに。<br />
+              それが我々が目指す製品コンセプトです。<br />
+              だからこそ面白く、そして遊びごごろを大切にします。<br />
+              お客様の笑顔を見たい。<br />
+              アッと驚く体験をぜひ手に取ってみてください。
+            </p>
+            <div class="p-common-company__btn">
+              <a class="c-btn c-btn--white" href="#">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News 一覧-->
+      <section class="p-news-archive l-news-archive">
+        <div class="l-inner">
+          <div class="p-news-archive__inner">
+            <ul class="p-news-archive__list">
+              <li class="p-news-archive__item">すべて</li>
+              <li class="p-news-archive__item">news</li>
+              <li class="p-news-archive__item">採用</li>
+              <li class="p-news-archive__item">カテゴリー</li>
+              <li class="p-news-archive__item">カテゴリー</li>
+            </ul>
+
+            <div class="p-news-archive__contents">
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035-01-01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="p-news-archive__content">
+                  <span class="c-news-category">news</span>
+                  <time
+                    class="c-news-date p-news-archive__date"
+                    datetime="2035.01.01"
+                    >2035.01.01</time
+                  >
+                  <p class="c-news-text p-news-archive__text">
+                    TVCMが放映されます
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="p-news-archive__pagenation"></div> -->
+        </div>
+      </section>
+
+      <!-- News  個別-->
+      <section class="p-news-post l-news-post">
+        <div class="l-inner">
+          <div class="p-news-post__inner">
+            <div class="p-news-post__item">
+              <p class="p-news-post__title">TVCMが放映されます</p>
+              <div class="p-news-post__info">
+                <span class="c-news-category">news</span>
+                <time
+                  class="c-news-date p-news-post__date"
+                  datetime="2035.01.01"
+                  >2035.01.01</time
+                >
+              </div>
+              <div class="p-news-post__image">
+                <img src="./assets/images/news__image.jpg" alt="" />
+              </div>
+              <p class="c-news-text p-news-post__text">
+                ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+              </p>
+            </div>
+
+            <div class="p-news-post__btn">
+              <a class="c-btn" href="#">一覧へ戻る</a>
+            </div>
+
+            <div class="news-post__relation">
+              <p class="p-news-post__relation-title">関連記事</p>
+
+              <ul class="p-news-post__relation-list">
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/news__image-sub.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-news-category c-news-category2">news</span>
+                      <time
+                        class="c-news-date p-news-post__relation-date"
+                        datetime="2035.01.01"
+                        >2035.01.01</time
+                      >
+                    </div>
+                    <p class="c-news-text p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/news__image-sub.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-news-category c-news-category2">news</span>
+                      <time
+                        class="c-news-date p-news-post__relation-date"
+                        datetime="2035.01.01"
+                        >2035.01.01</time
+                      >
+                    </div>
+                    <p class="c-news-text p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/news__image-sub.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-news-category c-news-category2">news</span>
+                      <time
+                        class="c-news-date p-news-post__relation-date"
+                        datetime="2035.01.01"
+                        >2035.01.01</time
+                      >
+                    </div>
+                    <p class="c-news-text p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ↓ l-inner無し！！！！！！！！！！！！！！！！！！ -->
+      <!-- common 背景 -->
+      <div class="c-common-fv l-common-fv">
+        <h2 class="c-section-title">news</h2>
+        <h2 class="c-section-subtitle">お知らせ</h2>
+      </div>
+
+      <!-- common 会社 -->
+      <section class="p-common-company l-common-company">
+        <div class="p-common-company__inner">
+          <h2 class="c-section-title p-common-company__title">company</h2>
+          <h2 class="c-section-subtitle p-common-company__subtitle">
+            我々について
+          </h2>
+          <p class="p-common-company__catch">
+            世界を「アッ！」と驚かせる<br />
+            当たり前を
+          </p>
+          <p class="p-common-company__text">
+            お客様の「アッ！」を楽しみに。<br />
+            それが我々が目指す製品コンセプトです。<br />
+            だからこそ面白く、そして遊びごごろを大切にします。<br />
+            お客様の笑顔を見たい。<br />
+            アッと驚く体験をぜひ手に取ってみてください。
+          </p>
+          <div class="p-common-company__btn">
+            <a class="c-btn c-btn--white" href="#">more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 会社概要 -->
+      <section class="p-company l-company">
+        <div class="l-inner">
+          <div class="p-company__inner">
+            <h2 class="p-company__title">会社概要</h2>
+
+            <div class="p-company-table p-company__about">
+              <table>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">会社名</th>
+                  <td class="p-company-table__data">CODO製造</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">代表取締役</th>
+                  <td class="p-company-table__data">田中　太郎</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">事業内容</th>
+                  <td class="p-company-table__data">製造販売</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">ホームページURL</th>
+                  <td class="p-company-table__data">XXXXXX.com</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">資本金</th>
+                  <td class="p-company-table__data">100万円</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">所在地</th>
+                  <td class="p-company-table__data">東京都品川区XXXXXXXXX</td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">電話番号</th>
+                  <td class="p-company-table__data p-company-table__data--tel">
+                    <a href="tel:0300000000"> 03-0000-0000</a>
+                  </td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">メール</th>
+                  <td class="p-company-table__data p-company-table__data--mail">
+                    <a href="mailto:XXXX@XXXXXX.jp"> XXXX@XXXXXX.jp</a>
+                  </td>
+                </tr>
+                <tr class="p-company-table__row">
+                  <th class="p-company-table__header">取引先一覧</th>
+                  <td class="p-company-table__data">
+                    ○○○○○株式会社、○○○○○株式会社、○○○○○株式会社
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 製品情報 一覧 -->
+      <section class="p-product-archive l-product-archive">
+        <div class="l-inner">
+          <div class="p-product-archive__inner">
+            <ul class="p-product-archive__list">
+              <li class="p-product-archive__item">すべて</li>
+              <li class="p-product-archive__item">製品の種類</li>
+              <li class="p-product-archive__item">製品の種類</li>
+              <li class="p-product-archive__item">製品の種類</li>
+              <li class="p-product-archive__item">製品の種類</li>
+            </ul>
+
+            <div class="p-product-archive__contents">
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+              <div class="c-card">
+                <a href="#">
+                  <div class="c-card__image">
+                    <img
+                      src="./assets/images/product__image.jpg"
+                      alt="製品の写真"
+                    />
+                  </div>
+                  <p class="c-card__title">製品名</p>
+                  <p class="c-card__text">
+                    ここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるここに製品詳細はいるこ…
+                  </p>
+                  <span class="c-product-category">種類</span>
+                  <span class="c-product-year c-card__year">2024年</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="p-news-archive__pagenation"></div> -->
+        </div>
+      </section>
+
+      <!-- Product 個別 -->
+      <section class="p-product-post l-product-post">
+        <div class="l-inner">
+          <div class="p-product-post__inner">
+            <div class="p-product-post__item">
+              <p class="p-product-post__title">製品名が入ります</p>
+              <div class="p-product-post__info">
+                <span class="c-product-category c-product-category2">種類</span>
+                <span
+                  class="c-product-year c-product-year2 p-product-post__year"
+                  >2024</span
+                >
+              </div>
+
+              <!-- スライダー -->
+              <div class="swiper2 slider p-product-post__main-image">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="p-product-post__image">
+                      <img src="./assets/images/products1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__image">
+                      <img src="./assets/images/products2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__image">
+                      <img src="./assets/images/products3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__image">
+                      <img src="./assets/images/products4.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <!-- 前後の矢印 -->
+                <div class="swiper-button-next slider-button-next"></div>
+                <div class="swiper-button-prev slider-button-prev"></div>
+              </div>
+
+              <!-- サムネイル -->
+              <div class="swiper2 slider-thumbnail p-product-post__sub-image">
+                <div class="swiper-wrapper p-product-post__wrapper">
+                  <div class="swiper-slide">
+                    <div class="p-product-post__thumbnail">
+                      <img src="./assets/images/products1.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__thumbnail">
+                      <img src="./assets/images/products2.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__thumbnail">
+                      <img src="./assets/images/products3.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="p-product-post__thumbnail">
+                      <img src="./assets/images/products4.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-product-table p-product-post__table">
+                <table>
+                  <tr class="p-product-table__row">
+                    <th class="p-product-table__header">製造年</th>
+                    <td class="p-product-table__data">2024年</td>
+                  </tr>
+                  <tr class="p-product-table__row">
+                    <th class="p-product-table__header">スペック</th>
+                    <td class="p-product-table__data">
+                      ここにテキストここにテキストここにテキスト
+                    </td>
+                  </tr>
+                  <tr class="p-product-table__row">
+                    <th class="p-product-table__header">スペック</th>
+                    <td class="p-product-table__data">
+                      ここにテキストここにテキストここにテキストここにテキスト
+                    </td>
+                  </tr>
+                  <tr class="p-product-table__row">
+                    <th class="p-product-table__header">スペック</th>
+                    <td class="p-product-table__data">
+                      ここにテキストここにテキストここにテキスト
+                    </td>
+                  </tr>
+                </table>
+              </div>
+
+              <p class="p-product-post__text">
+                ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+              </p>
+            </div>
+
+            <div class="p-product-post__btn">
+              <a class="c-btn" href="#">一覧へ戻る</a>
+            </div>
+
+            <div class="p-product-post__relation">
+              <p class="p-product-post__relation-title">関連記事</p>
+
+              <ul class="p-product-post__relation-list">
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/products1.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-product-category">種類</span>
+                      <span class="c-product-year p-product-post__relation-year"
+                        >2024</span
+                      >
+                    </div>
+                    <p class="p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/products1.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-product-category">種類</span>
+                      <span class="c-product-year p-product-post__relation-year"
+                        >2024</span
+                      >
+                    </div>
+                    <p class="p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+                <li class="c-card2">
+                  <a href="#">
+                    <div class="c-card2__image">
+                      <img src="./assets/images/products1.jpg" alt="" />
+                    </div>
+                    <div class="p-news-post__relation-info">
+                      <span class="c-product-category">種類</span>
+                      <span class="c-product-year p-product-post__relation-year"
+                        >2024</span
+                      >
+                    </div>
+                    <p class="p-news-post__relation-text">
+                      ここにタイトル入るここにタイトル入るここにタイトル入るここにタイトル入る
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 採用 -->
+      <section class="p-recruit">
+        <div class="l-inner">
+          <div class="p-recruit__inner">
+            <ul class="p-recruit__list">
+              <li class="p-recruit__item">
+                <p class="p-recruit__item-title">採用職種</p>
+                <dl>
+                  <dt class="p-recruit__definition-title">製造スタッフ</dt>
+                  <dd class="p-recruit__definition-data">
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                  </dd>
+                  <dt
+                    class="p-recruit__definition-title p-recruit__definition-title2"
+                  >
+                    製造スタッフ
+                  </dt>
+                  <dd class="p-recruit__definition-data">
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                  </dd>
+                </dl>
+              </li>
+              <li class="p-recruit__item">
+                <p class="p-recruit__item-title">応募資格</p>
+                <dl>
+                  <dt class="p-recruit__definition-title">
+                    資格名称を入れます
+                  </dt>
+                  <dt class="p-recruit__definition-title">
+                    資格名称を入れます
+                  </dt>
+                  <dt class="p-recruit__definition-title">
+                    資格名称を入れます
+                  </dt>
+                  <dd
+                    class="p-recruit__definition-data p-recruit__definition-data2"
+                  >
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                  </dd>
+                </dl>
+              </li>
+              <li class="p-recruit__item">
+                <p class="p-recruit__item-title">勤務地</p>
+                <dl>
+                  <dt class="p-recruit__definition-title">東京都</dt>
+                  <dt class="p-recruit__definition-title">大阪府</dt>
+                  <dd></dd>
+                </dl>
+              </li>
+              <li class="p-recruit__item">
+                <p class="p-recruit__item-title">雇用条件</p>
+                <dl>
+                  <dt class="p-recruit__definition-title">給与</dt>
+                  <dt class="p-recruit__definition-title">昇給</dt>
+                  <dt class="p-recruit__definition-title">勤務時間</dt>
+                  <dd
+                    class="p-recruit__definition-data p-recruit__definition-data2"
+                  >
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる<br />
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                    ここにテキスト入れるここにテキスト入れるここにテキスト入れる
+                  </dd>
+                </dl>
+              </li>
+            </ul>
+
+            <div class="p-recruit__images">
+              <div class="p-recruit__image">
+                <img src="./assets/images/recruite1.jpg" alt="" />
+              </div>
+              <div class="p-recruit__image">
+                <img src="./assets/images/recruite2.jpg" alt="" />
+              </div>
+              <div class="p-recruit__image">
+                <img src="./assets/images/recruite3.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- お問い合わせ -->
+      <section class="p-contact l-contact">
+        <div class="l-inner">
+          <div class="p-contact__inner">
+            <p class="p-contact__text">
+              <span class="p-contact__required">必須</span>は記入必須項目です。
+            </p>
+            <form action="confirm.php" method="post" class="p-contact__form">
+              <!-- 名前 -->
+              <div class="p-contact__item p-contact__item-name">
+                <label class="p-contact__label" for="name"
+                  >お名前<span class="p-contact__required">必須</span></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="name"
+                  type="text"
+                  name="yourname"
+                  required
+                />
+              </div>
+
+              <!-- ふりがな -->
+              <div class="p-contact__item p-contact__item-reading">
+                <label class="p-contact__label" for="name-reading"
+                  >ふりがな<span class="p-contact__required">必須</span></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="name-reading"
+                  type="text"
+                  name="name-reading"
+                  required
+                />
+              </div>
+
+              <!-- 郵便番号 -->
+              <div class="p-contact__item p-contact__item-zipcode">
+                <label
+                  class="p-contact__label p-contact__label-zipcode"
+                  for="zipcode"
+                  >郵便番号</label
+                >
+                〒<input
+                  class="p-contact__answer p-contact__answer-zipcode1"
+                  id="zipcode"
+                  type="text"
+                  name="zipcode"
+                />
+                ー
+                <input
+                  class="p-contact__answer p-contact__answer-zipcode2"
+                  id="zipcode2"
+                  type="text"
+                  name="zipcode"
+                />
+              </div>
+
+              <!-- 住所 -->
+              <div class="p-contact__item p-contact__item-address">
+                <label class="p-contact__label" for="address">住所</label>
+                <input
+                  class="p-contact__answer"
+                  id="address"
+                  type="text"
+                  name="address"
+                />
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="p-contact__item p-contact__item-tel">
+                <label class="p-contact__label" for="tel">電話番号</label>
+                <input
+                  class="p-contact__answer"
+                  id="tel"
+                  type="text"
+                  name="tel"
+                />
+              </div>
+
+              <!-- メールアドレス -->
+              <div class="p-contact__item p-contact__item-mail">
+                <label class="p-contact__label" for="email"
+                  >メールアドレス<span class="p-contact__required"
+                    >必須</span
+                  ></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <!-- お問い合わせ -->
+              <div class="p-contact__item p-contact__item-message">
+                <label
+                  class="p-contact__label p-contact__label-message"
+                  for="textarea-item"
+                  >お問い合わせ</label
+                >
+                <textarea
+                  class="p-contact__answer p-contact__answer-message"
+                  name="textarea-item"
+                  id="textarea-item"
+                ></textarea>
+              </div>
+
+              <!-- 同意チェック -->
+              <div class="p-contact__item p-contact__item-confirm">
+                <input
+                  class="p-contact__confirm-input"
+                  id="confirm"
+                  type="checkbox"
+                  name="confirm"
+                  value="プライバシーポリシーに同意する"
+                  required
+                /><label class="p-contact__confirm-label" for="confirm"
+                  ><span class="p-contact__confirm-underline"
+                    ><a href="#" target="_blank">プライバシーポリシー</a></span
+                  >に同意する</label
+                >
+              </div>
+              <!-- ボタン -->
+              <div class="p-contact__form-send">
+                <button type="submit" class="c-btn">送　信</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- common 採用 -->
+      <section class="p-common-recruit l-common-recruit">
+        <div class="p-common-recruit__wrapper">
+          <div class="p-common-recruit__titles">
+            <h2 class="c-section-title p-common-recruit__title">recruit</h2>
+            <h2 class="c-section-subtitle p-common-recruit__subtitle">
+              採用情報
+            </h2>
+          </div>
+          <div class="p-common-recruit__catch">
+            <p class="p-common-recruit__text">私たちと未来を創造しませんか？</p>
+            <div class="p-common-recruit__btn">
+              <a class="c-btn" href="#">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- common 問い合わせ -->
+      <section class="p-common-contact l-common-contact">
+        <h2 class="c-section-title p-common-contact__title">contact</h2>
+        <h2 class="c-section-subtitle p-common-contact__subtitle">
+          お問い合わせ
+        </h2>
+        <div class="p-common-contact__btn">
+          <a class="c-btn" href="#">more</a>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- フッター -->
+    <footer class="p-footer l-footer">
+      <nav class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-item"><a href="#">ホーム</a></li>
+          <li class="p-footer__nav-item"><a href="#">お知らせ</a></li>
+          <li class="p-footer__nav-item"><a href="#">製品一覧</a></li>
+          <li class="p-footer__nav-item"><a href="#">我々について</a></li>
+          <li class="p-footer__nav-item"><a href="#">採用情報</a></li>
+          <li class="p-footer__nav-item"><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <small>&copy;2024 CODO ASSIST</small>
+    </footer>
   </body>
 </html>

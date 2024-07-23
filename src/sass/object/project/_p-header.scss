@@ -1,0 +1,169 @@
+@use "global" as *;
+
+.p-header {
+  width: 100%;
+  height: myrem(80);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: $white;
+  @include mq(md) {
+    height: myrem(100);
+  }
+}
+
+.p-header__inner {
+  padding: 0 myrem(15);
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq(md) {
+    padding: 0 myrem(100);
+  }
+}
+
+.p-header__logo {
+  width: myrem(200);
+  @include mq(md) {
+    width: myrem(300);
+  }
+}
+
+.p-header__logo img {
+  aspect-ratio: 300/60;
+}
+
+.p-header__nav {
+  display: none;
+  padding: myrem(30);
+  width: 100vw;
+  height: calc(100vh - myrem(80));
+  position: fixed;
+  top: myrem(80);
+  left: 0;
+  background-color: $black;
+  @include mq(md) {
+    padding: 0;
+    width: calc(100% - myrem(300));
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 1;
+    position: unset;
+    background-color: $white;
+  }
+}
+
+.p-header__nav-list {
+  @include mq(md) {
+    display: flex;
+    column-gap: myrem(61);
+  }
+}
+
+.p-header__nav-item {
+  position: relative;
+}
+
+.p-header__nav-item:not(:last-child)::before {
+  @include mq(md) {
+    content: "";
+    width: myrem(18);
+    height: myrem(1);
+    position: absolute;
+    top: 50%;
+    right: myrem(-37);
+    background-color: $black;
+    transform: rotate(90deg);
+  }
+}
+
+.p-header__nav-item a {
+  margin-bottom: myrem(15);
+  width: 100%;
+  display: inline-block;
+  font-size: myrem(16);
+  font-weight: 600;
+  color: $white;
+  @include mq(md) {
+    margin: 0;
+    padding: myrem(38) 0;
+    position: relative;
+    color: $black;
+    transition: 0.3s;
+  }
+}
+
+.p-header__nav-item a:hover {
+  font-weight: bold;
+  color: $red;
+  opacity: 1;
+}
+
+.p-header__nav-item a::after {
+  @include mq(md) {
+    content: "";
+    width: 100%;
+    height: myrem(1);
+    position: absolute;
+    bottom: myrem(32);
+    left: 0;
+    background-color: $red;
+    transform: scale(0, 1);
+    transition: 0.5s;
+    transform-origin: left top;
+  }
+}
+
+.p-header__nav-item a:hover::after {
+  @include mq(md) {
+    transform: scale(1, 1);
+  }
+}
+
+.p-header__hamburger {
+  padding: 0 myrem(10);
+  width: myrem(50);
+  height: inherit;
+  z-index: 50;
+  cursor: pointer;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+.p-header__hamburger span {
+  width: 100%;
+  height: myrem(3);
+  display: block;
+  background-color: $black;
+  position: relative;
+  transition: 0.3s;
+  border-radius: myrem(5);
+}
+
+.p-header__hamburger span:nth-child(2) {
+  margin: myrem(6) 0;
+}
+
+//ハンバーガーがクリックされた時の動き
+.p-header__hamburger.is-active span:nth-child(1) {
+  transform: translate(0, myrem(8)) rotate(-45deg);
+}
+
+.p-header__hamburger.is-active span:nth-child(2) {
+  background-color: transparent;
+}
+
+.p-header__hamburger.is-active span:nth-child(3) {
+  transform: translate(0, myrem(-10)) rotate(45deg);
+}
+
+/* ハンバーガーメニュー展開時、背景を固定 */
+body.active {
+  height: 100%;
+  overflow: hidden;
+}

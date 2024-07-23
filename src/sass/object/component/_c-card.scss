@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.c-card__image {
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.25);
+}
+
+.c-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 317/195;
+}
+
+.c-card__title {
+  padding: myrem(14) 0 myrem(10);
+  font-size: myrem(20);
+  font-weight: bold;
+  border-bottom: 1px solid $black;
+  @include mq(md) {
+    padding: myrem(16) 0 myrem(11);
+    font-size: myrem(22);
+  }
+}
+
+.c-card__text {
+  padding: myrem(14) 0 myrem(18);
+  font-size: myrem(14);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* 任意の行数を指定 */
+  @include mq(md) {
+    padding: myrem(14) myrem(13) myrem(18) 0;
+    font-size: myrem(16);
+  }
+}
+
+.c-card__year {
+  margin-left: myrem(10);
+}

@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.l-common-fv {
+  padding-top: myrem(50);
+  padding-left: myrem(80);
+  @include mq(md) {
+    padding-top: myrem(80);
+    padding-left: myrem(215);
+  }
+}
+
+.l-common-company {
+}
+
+.l-common-recruit {
+  padding: myrem(35) 0;
+  @include mq(md) {
+    padding-top: myrem(88);
+    padding-bottom: myrem(79);
+  }
+}
+
+.l-common-contact {
+  padding-top: myrem(35); //テキトー
+  padding-bottom: myrem(50); //テキトー
+  @include mq(md) {
+    padding-top: myrem(70);
+    padding-bottom: myrem(100);
+  }
+}

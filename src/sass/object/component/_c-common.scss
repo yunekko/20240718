@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.c-common-fv {
+  width: 100%;
+  height: myrem(200);
+  background-image: url(../images/news__fv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include mq(md) {
+    height: myrem(300);
+  }
+}

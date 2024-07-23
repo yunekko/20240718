@@ -1,0 +1,162 @@
+@use "global" as *;
+
+//我々について
+.p-common-company {
+  color: $white;
+  // background-color: $red;
+  text-align: center;
+}
+
+.p-common-company__inner {
+  background-color: $red;
+  padding: myrem(25) myrem(10) myrem(30);
+  @include mq(md) {
+    padding: myrem(73) myrem(10) myrem(97);
+  }
+}
+
+.p-common-company__title {
+  font-size: myrem(50);
+  @include mq(md) {
+    font-size: myrem(70);
+  }
+}
+
+.p-common-company__title::first-letter {
+  color: $white;
+}
+
+.p-common-company__subtitle {
+  margin-top: myrem(17);
+  padding: 0;
+}
+
+.p-common-company__catch {
+  margin-top: myrem(30);
+  font-size: myrem(20);
+  font-weight: bold;
+  @include mq(md) {
+    margin-top: myrem(43);
+    font-size: myrem(40);
+  }
+}
+
+.p-common-company__text {
+  padding: myrem(5) 0;
+  font-size: myrem(12);
+  font-weight: bold;
+  letter-spacing: myrem(0.6);
+  line-height: 1.8;
+  @include mq(md) {
+    margin-left: myrem(-6);
+    font-size: myrem(16);
+  }
+}
+
+.p-common-company__btn {
+  margin: myrem(31) auto 0;
+  width: myrem(200);
+  @include mq(md) {
+    width: myrem(300);
+  }
+}
+
+//採用情報
+.p-common-recruit {
+  background-color: $black;
+}
+
+.p-common-recruit__wrapper {
+  margin: 0 auto;
+  width: 90%;
+  @include mq(md) {
+    max-width: myrem(1000);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.p-common-recruit__titles {
+  padding: myrem(10) 0 myrem(20);
+  width: 100%;
+  background-color: $red;
+  @include mq(md) {
+    padding: myrem(34) 0 myrem(83) myrem(74);
+    width: calc(440 / 1000 * 100%);
+    flex-grow: 1;
+  }
+}
+
+.p-common-recruit__title {
+  font-size: myrem(50);
+  color: $white;
+  text-align: center;
+  @include mq(md) {
+    font-size: myrem(70);
+    text-align: start;
+  }
+}
+
+.p-common-recruit__title::first-letter {
+  color: $white;
+}
+
+.p-common-recruit__subtitle {
+  color: $white;
+  text-align: center;
+  @include mq(md) {
+    margin-top: myrem(7);
+    padding-left: myrem(5);
+    text-align: start;
+  }
+}
+
+.p-common-recruit__catch {
+  padding: myrem(20) myrem(5);
+  width: 100%;
+  background-color: $white;
+  @include mq(md) {
+    padding: myrem(59) 0;
+    width: calc(560 / 1000 * 100%);
+    flex-grow: 1;
+  }
+}
+
+.p-common-recruit__text {
+  font-size: myrem(20);
+  font-weight: bold;
+  text-align: center;
+  @include mq(md) {
+    font-size: myrem(26);
+  }
+}
+
+.p-common-recruit__btn {
+  margin: myrem(12) auto 0;
+  width: myrem(200);
+  @include mq(md) {
+    width: myrem(300);
+  }
+}
+
+// お問い合わせ
+.p-common-contact__title {
+  font-size: myrem(50);
+  text-align: center;
+  @include mq(md) {
+    font-size: myrem(70);
+  }
+}
+
+.p-common-contact__subtitle {
+  margin-top: myrem(7);
+  padding-left: 0;
+  text-align: center;
+}
+
+.p-common-contact__btn {
+  margin: myrem(46) auto 0;
+  width: myrem(300);
+}

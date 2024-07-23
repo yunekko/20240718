@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.c-btn {
+  padding: myrem(15) 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: myrem(18);
+  font-weight: bold;
+  background-color: $white;
+  border: 1px solid $black;
+  text-transform: uppercase;
+  @include mq(md) {
+    font-size: myrem(20);
+  }
+}
+
+.c-btn--white {
+  color: $white;
+  background-color: $red;
+  border: 1px solid $white;
+}
+
+.c-btn::after {
+  content: "▶︎";
+  width: myrem(15);
+  height: myrem(15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: myrem(20);
+  font-size: myrem(6);
+  color: $white;
+  background-color: $black;
+  border-radius: 50%;
+}
+
+.c-btn--white::after {
+  color: $red;
+  background-color: $white;
+}

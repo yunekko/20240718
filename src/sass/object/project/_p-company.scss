@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.p-company__inner {
+  @include mq(md) {
+    padding: 0 myrem(120);
+  }
+}
+
+.p-company__title {
+  width: fit-content;
+  font-size: myrem(26);
+  font-weight: bold;
+  position: relative;
+  @include mq(md) {
+    font-size: myrem(38);
+  }
+}
+
+.p-company__title::first-letter {
+  color: $red;
+}
+
+.p-company__title::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 120%;
+  transform: translateY(-50%);
+  background-color: $black;
+  @include mq(md) {
+    width: myrem(815);
+  }
+}
+
+.p-company__about {
+  padding-top: myrem(30);
+}
+
+.p-company-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.p-company-table__row:nth-child(odd) {
+  background: $gray;
+}
+
+.p-company-table__header {
+  padding: myrem(22) myrem(5) myrem(19) 0;
+  width: 45%;
+  font-size: myrem(16);
+  font-weight: bold;
+  font-family: $font-sub;
+  text-align: center;
+  @include mq(md) {
+    padding: myrem(22) 0 myrem(19) myrem(12);
+    width: calc(336 / 998 * 100%);
+  }
+}
+
+.p-company-table__data {
+  padding: myrem(22) myrem(5) myrem(19);
+  font-size: myrem(16);
+  font-weight: 400;
+  font-family: $font-sub;
+  @include mq(md) {
+    padding: myrem(22) 0 myrem(19);
+  }
+}
+
+.p-company-table__data--tel,
+.p-company-table__data--mail {
+  text-decoration: underline;
+}
+
+.p-company-table__data--tel {
+  @include mq(md) {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+}
