@@ -12,17 +12,21 @@
   font-weight: bold;
   text-transform: capitalize;
   @include mq(md) {
-    padding: myrem(2) myrem(20);
+    // padding: myrem(2) myrem(20);
   }
 }
 
-.c-news-category--black {
+.c-news-category--recruit-post {
   background-color: $black;
 }
 
 .c-news-category2 {
   padding: myrem(6) myrem(25);
   text-transform: uppercase;
+}
+
+.c-news_category3 {
+  padding: myrem(4) myrem(24);
 }
 
 .c-news-date {

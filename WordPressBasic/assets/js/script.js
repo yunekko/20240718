@@ -59,6 +59,9 @@ jQuery(function ($) {
   }
 });
 
+// 問い合わせフォームチェックボックス
+ jQuery('.mwform-checkbox-field-text').html('<a href="/contact" target="_blank" rel="noopener noreferrer" class="p-contact__confirm-underline">プライバシーポリシー</a>に同意する');
+
 // Swiper (FV)
 const Swiper1 = new Swiper(".swiper1", {
   loop: true,

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <!-- meta情報 -->
+    <title>CODO ASSIST</title>
+    <meta name="keywords" content="建築" />
+
+    <!-- ogp -->
+    <meta property="og:title" content="CODO ASSIST" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://xs589126.xsrv.jp/codo_assist_test/"
+    />
+    <meta
+      property="og:image"
+      content="https://xs589126.xsrv.jp/codo_assist_test/images/fv1.jpg"
+    />
+    <meta property="og:site_name" content="CODO ASSIST" />
+    <meta
+      property="og:description"
+      content="CODO ASSIST/世界を「アッ！」と驚かせる当たり前を。お客様の「アッ！」を楽しみに。
+それが我々が目指す製品コンセプトです。
+だからこそ面白く、そして遊びごごろを大切にします。
+お客様の笑顔を見たい。
+アッと驚く体験をぜひ手に取ってみてください。"
+    />
+
+    <!-- noindex -->
+    <meta name="ots" content="noindex" />
+    <!-- nofollow -->
+    <meta name="robots" content="nofollow" />
+
+    <!-- ファビコン -->
+    <link rel="icon" href="./images/favicon.ico" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <header class="p-header l-header js-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="#">
+            <img src="./assets/images/logo.png" alt="会社のロゴ"
+          /></a>
+        </h1>
+        <nav class="p-header__nav js-drawer">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item"><a href="#">ホーム</a></li>
+            <li class="p-header__nav-item"><a href="#">お知らせ</a></li>
+            <li class="p-header__nav-item"><a href="#">製品一覧</a></li>
+            <li class="p-header__nav-item"><a href="#">我々について</a></li>
+            <li class="p-header__nav-item"><a href="#">採用情報</a></li>
+            <li class="p-header__nav-item"><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <button class="p-header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <!-- common 背景 -->
+      <div class="c-common-fv l-common-fv">
+        <h2 class="c-section-title">news</h2>
+        <h2 class="c-section-subtitle">お知らせ</h2>
+      </div>
+
+      <!-- お問い合わせ -->
+      <section class="p-contact l-contact">
+        <div class="l-inner">
+          <div class="p-contact__inner">
+            <p class="p-contact__text">
+              <span class="p-contact__required">必須</span>は記入必須項目です。
+            </p>
+            <form action="confirm.php" method="post" class="p-contact__form">
+              <!-- 名前 -->
+              <div class="p-contact__item p-contact__item-name">
+                <label class="p-contact__label" for="name"
+                  >お名前<span class="p-contact__required">必須</span></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="name"
+                  type="text"
+                  name="yourname"
+                  required
+                />
+              </div>
+
+              <!-- ふりがな -->
+              <div class="p-contact__item p-contact__item-reading">
+                <label class="p-contact__label" for="name-reading"
+                  >ふりがな<span class="p-contact__required">必須</span></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="name-reading"
+                  type="text"
+                  name="name-reading"
+                  required
+                />
+              </div>
+
+              <!-- 郵便番号 -->
+              <div class="p-contact__item p-contact__item-zipcode">
+                <label
+                  class="p-contact__label p-contact__label-zipcode"
+                  for="zipcode"
+                  >郵便番号</label
+                >
+                〒<input
+                  class="p-contact__answer p-contact__answer-zipcode1"
+                  id="zipcode"
+                  type="text"
+                  name="zipcode"
+                />
+                ー
+                <input
+                  class="p-contact__answer p-contact__answer-zipcode2"
+                  id="zipcode2"
+                  type="text"
+                  name="zipcode"
+                />
+              </div>
+
+              <!-- 住所 -->
+              <div class="p-contact__item p-contact__item-address">
+                <label class="p-contact__label" for="address">住所</label>
+                <input
+                  class="p-contact__answer"
+                  id="address"
+                  type="text"
+                  name="address"
+                />
+              </div>
+
+              <!-- 電話番号 -->
+              <div class="p-contact__item p-contact__item-tel">
+                <label class="p-contact__label" for="tel">電話番号</label>
+                <input
+                  class="p-contact__answer"
+                  id="tel"
+                  type="text"
+                  name="tel"
+                />
+              </div>
+
+              <!-- メールアドレス -->
+              <div class="p-contact__item p-contact__item-mail">
+                <label class="p-contact__label" for="email"
+                  >メールアドレス<span class="p-contact__required"
+                    >必須</span
+                  ></label
+                >
+                <input
+                  class="p-contact__answer"
+                  id="email"
+                  type="email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <!-- お問い合わせ -->
+              <div class="p-contact__item p-contact__item-message">
+                <label
+                  class="p-contact__label p-contact__label-message"
+                  for="textarea-item"
+                  >お問い合わせ</label
+                >
+                <textarea
+                  class="p-contact__answer p-contact__answer-message"
+                  name="textarea-item"
+                  id="textarea-item"
+                ></textarea>
+              </div>
+
+              <!-- 同意チェック -->
+              <div class="p-contact__item p-contact__item-confirm">
+                <input
+                  class="p-contact__confirm-input"
+                  id="confirm"
+                  type="checkbox"
+                  name="confirm"
+                  value="プライバシーポリシーに同意する"
+                  required
+                /><label class="p-contact__confirm-label" for="confirm"
+                  ><span class="p-contact__confirm-underline"
+                    ><a href="#" target="_blank">プライバシーポリシー</a></span
+                  >に同意する</label
+                >
+              </div>
+              <!-- ボタン -->
+              <div class="p-contact__form-send">
+                <button type="submit" class="c-btn">送　信</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- common 採用 -->
+      <section class="p-common-recruit l-common-recruit">
+        <div class="p-common-recruit__wrapper">
+          <div class="p-common-recruit__titles">
+            <h2 class="c-section-title p-common-recruit__title">recruit</h2>
+            <h2 class="c-section-subtitle p-common-recruit__subtitle">
+              採用情報
+            </h2>
+          </div>
+          <div class="p-common-recruit__catch">
+            <p class="p-common-recruit__text">私たちと未来を創造しませんか？</p>
+            <div class="p-common-recruit__btn">
+              <a class="c-btn" href="#">more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- common 問い合わせ -->
+      <section class="p-common-contact l-common-contact">
+        <h2 class="c-section-title p-common-contact__title">contact</h2>
+        <h2 class="c-section-subtitle p-common-contact__subtitle">
+          お問い合わせ
+        </h2>
+        <div class="p-common-contact__btn">
+          <a class="c-btn" href="#">more</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="p-footer l-footer">
+      <nav class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-item"><a href="#">ホーム</a></li>
+          <li class="p-footer__nav-item"><a href="#">お知らせ</a></li>
+          <li class="p-footer__nav-item"><a href="#">製品一覧</a></li>
+          <li class="p-footer__nav-item"><a href="#">我々について</a></li>
+          <li class="p-footer__nav-item"><a href="#">採用情報</a></li>
+          <li class="p-footer__nav-item"><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <small>&copy;2024 CODO ASSIST</small>
+    </footer>
+  </body>
+</html>

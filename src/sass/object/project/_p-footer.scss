@@ -17,11 +17,11 @@
   }
 }
 
-.p-footer__nav-item {
+.p-footer__nav-list li {
   position: relative;
 }
 
-.p-footer__nav-item:not(:last-child)::before {
+.p-footer__nav-list li:not(:last-child)::before {
   @include mq(md) {
     content: "";
     width: myrem(18);
@@ -34,7 +34,7 @@
   }
 }
 
-.p-footer__nav-item a {
+.p-footer__nav-list li a {
   padding: myrem(5) myrem(30);
   width: 100%;
   display: inline-block;

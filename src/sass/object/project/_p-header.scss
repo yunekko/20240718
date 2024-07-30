@@ -60,15 +60,15 @@
 .p-header__nav-list {
   @include mq(md) {
     display: flex;
-    column-gap: myrem(61);
+    column-gap: myrem(56);
   }
 }
 
-.p-header__nav-item {
+.p-header__nav-list li {
   position: relative;
 }
 
-.p-header__nav-item:not(:last-child)::before {
+.p-header__nav-list li:not(:last-child)::before {
   @include mq(md) {
     content: "";
     width: myrem(18);
@@ -81,7 +81,7 @@
   }
 }
 
-.p-header__nav-item a {
+.p-header__nav-list li a {
   margin-bottom: myrem(15);
   width: 100%;
   display: inline-block;
@@ -97,13 +97,13 @@
   }
 }
 
-.p-header__nav-item a:hover {
+.p-header__nav-list li a:hover {
   font-weight: bold;
   color: $red;
   opacity: 1;
 }
 
-.p-header__nav-item a::after {
+.p-header__nav-list li a::after {
   @include mq(md) {
     content: "";
     width: 100%;
@@ -118,7 +118,7 @@
   }
 }
 
-.p-header__nav-item a:hover::after {
+.p-header__nav-list li a:hover::after {
   @include mq(md) {
     transform: scale(1, 1);
   }

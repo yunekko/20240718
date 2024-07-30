@@ -6,10 +6,12 @@
 }
 
 .p-product-archive__inner {
+  margin-top: myrem(30);
   padding: myrem(40) myrem(20);
   background-color: $white;
   @include mq(md) {
-    padding: myrem(70) myrem(120) myrem(110);
+    margin-top: myrem(60);
+    padding: myrem(80) myrem(120) myrem(105);
   }
 }
 
@@ -23,12 +25,18 @@
   }
 }
 
-.p-product-archive__item {
-  background-color: pink;
-
+.p-product-archive__list li {
   padding: myrem(2) myrem(20);
   font-size: myrem(14);
   font-weight: bold;
+}
+
+.p-product-archive__list li.current-cat {
+  background-color: $pink;
+}
+
+.p-product-archive__all-news {
+  background-color: $pink;
 }
 
 .p-product-archive__contents {
@@ -40,8 +48,12 @@
   @include mq(md) {
     margin-top: myrem(60);
     grid-template-columns: repeat(3, 1fr);
-    row-gap: myrem(52);
+    row-gap: myrem(54);
   }
+}
+
+.p-product-archive__pagenation {
+  margin-top: myrem(80);
 }
 
 // Product 個別ページ
@@ -50,10 +62,12 @@
 }
 
 .p-product-post__inner {
+    margin-top: myrem(30);
   padding: myrem(40) myrem(20);
   background-color: $white;
   @include mq(md) {
-    padding: myrem(70) myrem(120) myrem(77);
+    margin-top: myrem(60);
+    padding: myrem(78) myrem(120) myrem(77);
   }
 }
 
@@ -200,15 +214,18 @@
   }
 }
 
-.p-product-post__text {
+.p-product-post__contents {
   padding: myrem(20) myrem(5) myrem(50) 0;
+  @include mq(md) {
+    padding: myrem(31) myrem(10) myrem(50) 0;
+  }
+}
+
+.p-product-post__contents p {
   font-size: myrem(16);
   font-weight: 400;
   font-family: $font-sub;
   line-height: 1.75;
-  @include mq(md) {
-    padding: myrem(31) myrem(10) myrem(50) 0;
-  }
 }
 
 .p-product-post__btn {
@@ -244,7 +261,7 @@
 
 .p-product-post__relation-title::after {
   content: "";
-  width: 100px;
+  width: calc(100vw - myrem(205));
   height: 1px;
   position: absolute;
   top: 50%;
@@ -258,12 +275,16 @@
 
 .p-product-post__relation-list {
   padding-top: myrem(15);
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: myrem(20);
   @include mq(md) {
     padding-top: myrem(30);
-    flex-direction: row;
+    // flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+
     column-gap: myrem(25);
   }
 }
@@ -278,7 +299,14 @@
   margin-left: myrem(16);
 }
 
-.p-product-post__relation-text {
+.p-product-post__relation-contents {
   padding-top: myrem(13);
+}
+
+.p-product-post__relation-contents p {
   letter-spacing: 0.03em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4; /* 任意の行数を指定 */
 }

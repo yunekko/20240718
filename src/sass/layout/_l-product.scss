@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.l-product-archive {
+    padding-top: myrem(15);
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-top: myrem(19);
+    padding-bottom: myrem(101);
+  }
+}
+
+.l-product-post {
+    padding-top: myrem(15);
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-top: myrem(19);
+    padding-bottom: myrem(97);
+  }
+}

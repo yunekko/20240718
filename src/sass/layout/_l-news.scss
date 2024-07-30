@@ -1,4 +1,19 @@
 @use "global" as *;
 
 .l-news-archive {
+  padding-top: myrem(15);
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-top: myrem(19);
+    padding-bottom: myrem(103);
+  }
+}
+
+.l-news-post {
+  padding-top: myrem(15);
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-top: myrem(19);
+    padding-bottom: myrem(96);
+  }
 }

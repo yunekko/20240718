@@ -6,10 +6,12 @@
 }
 
 .p-news-archive__inner {
+  margin-top: myrem(20);
   padding: myrem(40) myrem(20);
   background-color: $white;
   @include mq(md) {
-    padding: myrem(70) myrem(120) myrem(80);
+    margin-top: myrem(61);
+    padding: myrem(79) myrem(120) myrem(80);
   }
 }
 
@@ -22,14 +24,19 @@
     column-gap: myrem(20);
   }
 }
-
-.p-news-archive__item {
-  background-color: pink;
-
+.p-news-archive__list li {
   padding: myrem(2) myrem(20);
   font-size: myrem(14);
   font-weight: bold;
   text-transform: capitalize;
+}
+
+.p-news-archive__list li.current-cat {
+  background-color: $pink;
+}
+
+.p-news-archive__all-news {
+  background-color: $pink;
 }
 
 .p-news-archive__contents {
@@ -44,6 +51,11 @@
 
 .p-news-archive__content {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: myrem(10);
+  @include mq (md) {
+flex-wrap: nowrap;
+  }
 }
 
 .p-news-archive__date {
@@ -54,13 +66,20 @@
 }
 
 .p-news-archive__text {
-  padding-left: myrem(15);
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   @include mq(md) {
     margin-left: myrem(46);
+    padding-left: 0;
+  }
+}
+
+.p-news-archive__pagenation {
+  margin-top: myrem(40);
+  @include mq (md) {
+      margin-top: myrem(80);
   }
 }
 
@@ -71,9 +90,11 @@
 }
 
 .p-news-post__inner {
-  padding: myrem(40) myrem(20);
+    margin-top: myrem(20);
+  padding: myrem(30) myrem(20);
   background-color: $white;
   @include mq(md) {
+    margin-top: myrem(59);
     padding: myrem(80) myrem(120) myrem(77);
   }
 }
@@ -109,7 +130,7 @@
   aspect-ratio: 1000/560;
 }
 
-.p-news-post__text {
+.p-news-post__text p {
   padding-top: myrem(20);
   line-height: 1.7;
   @include mq(md) {
@@ -143,7 +164,7 @@
 
 .p-news-post__relation-title::after {
   content: "";
-  width: 100px;
+  width: calc(100vw - myrem(205));
   height: 1px;
   position: absolute;
   top: 50%;
@@ -157,11 +178,14 @@
 
 .p-news-post__relation-list {
   padding-top: myrem(30);
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
   row-gap: myrem(20);
   @include mq(md) {
-    flex-direction: row;
+    // flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: myrem(25);
   }
 }

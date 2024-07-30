@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-company {
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-bottom: myrem(100);
+  }
+}

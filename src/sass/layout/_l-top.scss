@@ -6,3 +6,10 @@
     padding: 0 myrem(220);
   }
 }
+
+.l-top-product {
+  padding: myrem(60) 0;
+  @include mq(md) {
+    padding: myrem(100) 0 myrem(20);
+  }
+}

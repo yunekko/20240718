@@ -2,7 +2,7 @@
 
 .l-common-fv {
   padding-top: myrem(50);
-  padding-left: myrem(80);
+  padding-left: myrem(32);
   @include mq(md) {
     padding-top: myrem(80);
     padding-left: myrem(215);
@@ -10,6 +10,12 @@
 }
 
 .l-common-company {
+    padding-top: myrem(15);
+  padding-bottom: myrem(60);
+  @include mq(md) {
+    padding-top: myrem(19);
+    padding-bottom: 0;
+  }
 }
 
 .l-common-recruit {
@@ -25,6 +31,6 @@
   padding-bottom: myrem(50); //テキトー
   @include mq(md) {
     padding-top: myrem(70);
-    padding-bottom: myrem(100);
+    padding-bottom: myrem(99);
   }
 }

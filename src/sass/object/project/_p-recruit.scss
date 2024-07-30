@@ -5,10 +5,12 @@
 }
 
 .p-recruit__inner {
-  padding: myrem(40) myrem(20);
+  margin-top: myrem(30);
+  padding: myrem(40) myrem(20) myrem(60);
   background-color: $white;
   @include mq(md) {
-    padding: 0 myrem(120) 120px;
+    margin-top: myrem(58);
+    padding: myrem(83) myrem(120) myrem(159);
   }
 }
 

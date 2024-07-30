@@ -3,7 +3,7 @@
 //我々について
 .p-common-company {
   color: $white;
-  // background-color: $red;
+  background-color: $gray;
   text-align: center;
 }
 
@@ -11,7 +11,16 @@
   background-color: $red;
   padding: myrem(25) myrem(10) myrem(30);
   @include mq(md) {
-    padding: myrem(73) myrem(10) myrem(97);
+    margin-top: myrem(60);
+    padding: myrem(73) myrem(10) myrem(98);
+  }
+}
+
+.p-common-company__inner--company {
+  margin-top: myrem(30);
+  @include mq(md) {
+    margin-top: 0;
+    padding: myrem(73) myrem(10) myrem(92);
   }
 }
 
@@ -158,5 +167,8 @@
 
 .p-common-contact__btn {
   margin: myrem(46) auto 0;
-  width: myrem(300);
+  width: myrem(200);
+  @include mq (md) {
+     width: myrem(300);
+  }
 }

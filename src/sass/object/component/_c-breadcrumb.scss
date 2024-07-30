@@ -1,0 +1,16 @@
+@use "global" as *;
+
+.c-breadcrumb {
+  text-align: start;
+  font-size: myrem(16);
+  font-weight: 400;
+  color: $black;
+}
+
+.c-breadcrumb span {
+  margin-right: myrem(8);
+}
+
+.c-breadcrumb span:not(:first-child) {
+  margin-left: myrem(15);
+}

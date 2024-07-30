@@ -17,13 +17,19 @@
   font-weight: bold;
   border-bottom: 1px solid $black;
   @include mq(md) {
-    padding: myrem(16) 0 myrem(11);
+    padding: myrem(16) myrem(4) myrem(11);
     font-size: myrem(22);
   }
 }
 
-.c-card__text {
+.c-card__contents {
   padding: myrem(14) 0 myrem(18);
+  @include mq(md) {
+    padding: myrem(11) myrem(13) myrem(20) myrem(4);
+  }
+}
+
+.c-card__contents p {
   font-size: myrem(14);
   font-weight: 400;
   letter-spacing: 0.03em;
@@ -33,7 +39,6 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4; /* 任意の行数を指定 */
   @include mq(md) {
-    padding: myrem(14) myrem(13) myrem(18) 0;
     font-size: myrem(16);
   }
 }

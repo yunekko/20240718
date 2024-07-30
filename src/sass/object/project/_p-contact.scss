@@ -5,10 +5,12 @@
 }
 
 .p-contact__inner {
+  margin-top: myrem(30);
   padding: myrem(40) myrem(20);
   background-color: $white;
   @include mq(md) {
-    padding: 0 myrem(120) myrem(79);
+    margin-top: myrem(60);
+    padding: myrem(81) myrem(120) myrem(79);
   }
 }
 
@@ -60,13 +62,15 @@
 }
 
 .p-contact__item-confirm {
-  margin-top: myrem(36);
+  margin-top: myrem(35);
+  justify-content: center;
 }
 
 //ラベル
 .p-contact__label {
   width: 100%;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   font-size: myrem(16);
   font-weight: bold;
   font-family: $font-sub;
@@ -95,10 +99,11 @@
 .p-contact__required {
   margin-right: myrem(7);
   margin-left: myrem(10);
-  padding: myrem(2) myrem(10);
+  padding: myrem(3) myrem(10);
   font-size: myrem(14);
   font-weight: bold;
   font-family: $font-sub;
+  line-height: 1;
   color: $white;
   background-color: $red;
   @include mq(md) {
@@ -108,20 +113,18 @@
 
 //回答
 .p-contact__answer {
-  margin-top: myrem(20);
   padding: myrem(10);
   width: 100%;
   flex-grow: 1;
   background-color: $gray;
   border-radius: myrem(8);
   @include mq(md) {
-    margin-top: 0;
     width: calc(100% - (calc(230 / 1000 * 100%)));
   }
 }
 
 .p-contact__answer-zipcode1 {
-  margin-top: 0;
+  // margin-top: 0;
   margin-left: myrem(15);
   margin-right: myrem(6);
   width: 20%;
@@ -132,7 +135,7 @@
 }
 
 .p-contact__answer-zipcode2 {
-  margin-top: 0;
+  // margin-top: 0;
   margin-left: myrem(5);
   width: 30%;
   flex-grow: inherit;
@@ -171,16 +174,30 @@ textarea {
 }
 
 //同意チェック
-.p-contact__confirm-input {
-  display: none;
-}
 
-.p-contact__confirm-label {
-  margin: 0 auto;
-  padding-left: myrem(25);
-  width: fit-content;
-  display: block;
-  position: relative;
+// .p-contact__confirm-input {
+//   display: none;
+// }
+
+// .p-contact__confirm-label {
+//   margin: 0 auto;
+//   padding-left: myrem(25);
+//   width: fit-content;
+//   display: block;
+//   position: relative;
+//   font-size: myrem(16);
+//   font-weight: bold;
+//   font-family: $font-sub;
+//   @include mq(md) {
+//     font-size: myrem(18);
+//   }
+// }
+
+.mwform-checkbox-field-text {
+  // margin: 0 auto;
+  // width: fit-content;
+  // display: block;
+  // position: relative;
   font-size: myrem(16);
   font-weight: bold;
   font-family: $font-sub;
@@ -189,46 +206,88 @@ textarea {
   }
 }
 
-.p-contact__confirm-label::before {
-  content: "";
+
+
+// .p-contact__confirm-label::before {
+//   content: "";
+//   width: myrem(14);
+//   height: myrem(14);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   position: absolute;
+//   top: myrem(3);
+//   left: myrem(-1);
+//   background-color: #fff;
+//   border: 1px solid $black;
+//   border-radius: myrem(3);
+//   @include mq(md) {
+//     top: myrem(5);
+//     left: myrem(-1);
+//   }
+// }
+
+// .p-contact__confirm-input + label::after {
+//   content: "";
+//   width: myrem(18);
+//   height: myrem(14);
+//   background-image: url(..//images/check.png);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: myrem(2);
+//   left: myrem(-3);
+//   z-index: 10;
+//   transition: 0.3s;
+//   opacity: 0;
+// }
+
+.p-contact__confirm-underline {
+  border-bottom: 1px solid $black;
+}
+
+.p-contact__item-confirm label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
   width: myrem(14);
   height: myrem(14);
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: myrem(3);
-  left: myrem(-1);
+  position: relative;
+  left: myrem(-5);
   background-color: #fff;
   border: 1px solid $black;
   border-radius: myrem(3);
+    vertical-align: -5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   @include mq(md) {
-    top: myrem(5);
-    left: myrem(-1);
-  }
-}
+    left: myrem(1);
+    }}
 
-.p-contact__confirm-input + label::after {
-  content: "";
-  width: myrem(18);
-  height: myrem(14);
+
+input[type="checkbox"]::before {
+  content: '';
+  width: myrem(15);
+  height: myrem(12);
   background-image: url(..//images/check.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
-  top: myrem(2);
-  left: myrem(-3);
+  top: myrem(-3);
+  left: myrem(-1);
   z-index: 10;
   transition: 0.3s;
   opacity: 0;
 }
 
-.p-contact__confirm-input:checked + label::after {
+input[type="checkbox"]:checked:before {
   opacity: 1;
-}
-
-.p-contact__confirm-underline {
-  border-bottom: 1px solid $black;
 }
 
 .p-contact__form-send {

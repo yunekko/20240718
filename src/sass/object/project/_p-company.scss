@@ -1,8 +1,14 @@
 @use "global" as *;
 
+.p-company {
+  background-color: $gray;
+}
+
 .p-company__inner {
+  padding: myrem(40) myrem(20);
+  background-color: $white;
   @include mq(md) {
-    padding: 0 myrem(120);
+    padding: myrem(89) myrem(120) myrem(82);
   }
 }
 
@@ -48,8 +54,8 @@
 }
 
 .p-company-table__header {
-  padding: myrem(22) myrem(5) myrem(19) 0;
-  width: 45%;
+  padding: myrem(22) myrem(5) myrem(19);
+  width: 38%;
   font-size: myrem(16);
   font-weight: bold;
   font-family: $font-sub;
