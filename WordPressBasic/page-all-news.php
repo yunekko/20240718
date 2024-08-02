@@ -15,6 +15,7 @@
     // クエリの設定
     $args = [
         'post_type' => 'post',
+        'posts_per_page' => 10,
         'paged' => $paged,
     ];
     $latest_query = new WP_Query($args);

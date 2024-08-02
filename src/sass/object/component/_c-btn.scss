@@ -9,6 +9,7 @@
   position: relative;
   font-size: myrem(18);
   font-weight: bold;
+  color: $black;
   background-color: $white;
   border: 1px solid $black;
   text-transform: uppercase;
@@ -31,7 +32,9 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: 50%;
   right: myrem(20);
+  transform: translateY(-50%);
   font-size: myrem(6);
   color: $white;
   background-color: $black;

@@ -11,13 +11,18 @@
   font-size: myrem(14);
   font-weight: bold;
   text-transform: capitalize;
-  @include mq(md) {
-    // padding: myrem(2) myrem(20);
-  }
 }
 
 .c-news-category--recruit-post {
   background-color: $black;
+}
+
+.c-news-category--category1 {
+  min-width: myrem(95);
+}
+
+.c-news-category--category2 {
+  min-width: myrem(95);
 }
 
 .c-news-category2 {

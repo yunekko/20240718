@@ -43,7 +43,6 @@
                 ?>
                 <div class="p-product-archive__contents">
                     <?php while ($latest_query->have_posts()) : $latest_query->the_post(); ?>
-
                     <div class="c-card">
                         <a href="<?php the_permalink(); ?>">
                             <div class="c-card__image">

@@ -50,12 +50,9 @@
                     <li id="post-<?php the_ID(); ?>" <?php post_class('p-top-news__item'); ?>>
                         <a href="<?php the_permalink(); ?>">
                             <div class="p-top-news__info">
-
                                 <?php
                                         $categories = get_the_category();
-
                                         if ($categories) : ?>
-
                                 <?php foreach ($categories as $category) : ?>
                                 <p class="c-news-category c-news-category--<?php echo esc_attr($category->slug); ?>">
                                     <?php echo esc_html($category->name); ?>
@@ -73,6 +70,7 @@
                 </ul>
                 <?php wp_reset_postdata(); ?>
             </div>
+
             <div class="p-top-news__btn">
                 <a class="c-btn" href="<?php echo esc_url(home_url('/all-news/')); ?>">more</a>
             </div>
@@ -108,12 +106,14 @@
                                 <?php endif; ?>
                             </div>
                             <p class="c-card__title"><?php the_title(); ?></p>
-
                             <div class="c-card__contents">
                                 <?php the_content(); ?>
                             </div>
 
-                            <span class="c-product-category">種類</span>
+                            <span class="c-product-category"> <?php
+                                                                        $term = get_the_terms($post->ID, 'product_series');
+                                                                        echo $term[0]->name;
+                                                                        ?></span>
                             <span class="c-product-year c-card__year"><?php the_field('year'); ?>年</span>
                         </a>
                     </li>

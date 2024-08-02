@@ -47,6 +47,13 @@ function my_script_init()
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
+//google fonts
+function wp_google_fonts()
+{
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+JP:wght@100..900&display=swap', array(), null);
+}
+add_action('wp_enqueue_scripts', 'wp_google_fonts');
+
 
 /**
  * アーカイブタイトル書き換え
@@ -104,7 +111,6 @@ function bcn_add($bcnObj)
 	return $bcnObj;
 }
 add_action('bcn_after_fill', 'bcn_add');
-
 
 /**
  * 投稿タイプごとに異なるアーカイブの表示件数を指定

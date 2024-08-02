@@ -88,7 +88,6 @@
                             </div>
 
                             <!-- 画像2枚目以降 -->
-
                             <div class="swiper-slide">
                                 <div class="p-product-post__thumbnail">
                                     <?php
@@ -239,7 +238,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- 共通 -->
     <?php get_template_part('template-parts/common', 'parts'); ?>

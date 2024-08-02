@@ -62,7 +62,7 @@
 }
 
 .p-product-post__inner {
-    margin-top: myrem(30);
+  margin-top: myrem(30);
   padding: myrem(40) myrem(20);
   background-color: $white;
   @include mq(md) {
@@ -275,16 +275,12 @@
 
 .p-product-post__relation-list {
   padding-top: myrem(15);
-  // display: flex;
-  // flex-direction: column;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: myrem(20);
   @include mq(md) {
     padding-top: myrem(30);
-    // flex-direction: row;
     grid-template-columns: repeat(3, 1fr);
-
     column-gap: myrem(25);
   }
 }

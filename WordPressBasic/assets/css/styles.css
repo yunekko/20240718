@@ -147,12 +147,10 @@ button {
 
 .l-common-company {
   padding-top: 0.9375rem;
-  padding-bottom: 3.75rem;
 }
 @media screen and (min-width: 768px) {
   .l-common-company {
     padding-top: 1.1875rem;
-    padding-bottom: 0;
   }
 }
 
@@ -325,6 +323,7 @@ button {
   position: relative;
   font-size: 1.125rem;
   font-weight: bold;
+  color: #000;
   background-color: #fff;
   border: 1px solid #000;
   text-transform: uppercase;
@@ -355,7 +354,10 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  top: 50%;
   right: 1.25rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 0.375rem;
   color: #fff;
   background-color: #000;
@@ -470,8 +472,17 @@ button {
   font-weight: bold;
   text-transform: capitalize;
 }
+
 .c-news-category--recruit-post {
   background-color: #000;
+}
+
+.c-news-category--category1 {
+  min-width: 5.9375rem;
+}
+
+.c-news-category--category2 {
+  min-width: 5.9375rem;
 }
 
 .c-news-category2 {
@@ -599,7 +610,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-common-company__inner--company {
-    margin-top: 0;
+    margin-top: 3.75rem;
     padding: 4.5625rem 0.625rem 5.75rem;
   }
 }
@@ -1152,7 +1163,7 @@ input[type=checkbox]::before {
   content: "";
   width: 0.9375rem;
   height: 0.75rem;
-  background-image: url(..//images/check.png);
+  background-image: url(https://xs589126.xsrv.jp/codo_assist_test/wp-content/themes/WordPressBasic/assets/images/check.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -1588,7 +1599,7 @@ body.active {
 }
 @media screen and (min-width: 768px) {
   .p-news-archive__text {
-    margin-left: 2.875rem;
+    margin-left: 2.25rem;
     padding-left: 0;
   }
 }

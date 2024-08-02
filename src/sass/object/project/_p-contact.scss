@@ -124,7 +124,6 @@
 }
 
 .p-contact__answer-zipcode1 {
-  // margin-top: 0;
   margin-left: myrem(15);
   margin-right: myrem(6);
   width: 20%;
@@ -135,7 +134,6 @@
 }
 
 .p-contact__answer-zipcode2 {
-  // margin-top: 0;
   margin-left: myrem(5);
   width: 30%;
   flex-grow: inherit;
@@ -174,30 +172,7 @@ textarea {
 }
 
 //同意チェック
-
-// .p-contact__confirm-input {
-//   display: none;
-// }
-
-// .p-contact__confirm-label {
-//   margin: 0 auto;
-//   padding-left: myrem(25);
-//   width: fit-content;
-//   display: block;
-//   position: relative;
-//   font-size: myrem(16);
-//   font-weight: bold;
-//   font-family: $font-sub;
-//   @include mq(md) {
-//     font-size: myrem(18);
-//   }
-// }
-
 .mwform-checkbox-field-text {
-  // margin: 0 auto;
-  // width: fit-content;
-  // display: block;
-  // position: relative;
   font-size: myrem(16);
   font-weight: bold;
   font-family: $font-sub;
@@ -205,42 +180,6 @@ textarea {
     font-size: myrem(18);
   }
 }
-
-
-
-// .p-contact__confirm-label::before {
-//   content: "";
-//   width: myrem(14);
-//   height: myrem(14);
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   position: absolute;
-//   top: myrem(3);
-//   left: myrem(-1);
-//   background-color: #fff;
-//   border: 1px solid $black;
-//   border-radius: myrem(3);
-//   @include mq(md) {
-//     top: myrem(5);
-//     left: myrem(-1);
-//   }
-// }
-
-// .p-contact__confirm-input + label::after {
-//   content: "";
-//   width: myrem(18);
-//   height: myrem(14);
-//   background-image: url(..//images/check.png);
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   position: absolute;
-//   top: myrem(2);
-//   left: myrem(-3);
-//   z-index: 10;
-//   transition: 0.3s;
-//   opacity: 0;
-// }
 
 .p-contact__confirm-underline {
   border-bottom: 1px solid $black;
@@ -262,20 +201,20 @@ input[type="checkbox"] {
   background-color: #fff;
   border: 1px solid $black;
   border-radius: myrem(3);
-    vertical-align: -5px;
+  vertical-align: -5px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   @include mq(md) {
     left: myrem(1);
-    }}
-
+  }
+}
 
 input[type="checkbox"]::before {
-  content: '';
+  content: "";
   width: myrem(15);
   height: myrem(12);
-  background-image: url(..//images/check.png);
+  background-image: url(https://xs589126.xsrv.jp/codo_assist_test/wp-content/themes/WordPressBasic/assets/images/check.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;

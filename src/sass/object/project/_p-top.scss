@@ -80,24 +80,12 @@
 }
 
 .p-top-product__inner {
-  // position: relative;
   padding: myrem(30) myrem(20);
   background-color: $white;
   @include mq(md) {
     padding: myrem(60) myrem(120) myrem(81);
   }
 }
-
-// .p-top-product__wrapper::before {
-//   content: "";
-//   width: 100vw;
-//   height: 100%;
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   background-color: $gray;
-// }
 
 .p-top-product__title {
   text-align: center;

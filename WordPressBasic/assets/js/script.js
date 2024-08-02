@@ -51,7 +51,7 @@ jQuery(function ($) {
     $(".js-drawer").fadeToggle();
   });
   if (window.matchMedia("(max-width: 768px)").matches) {
-    $(".p-header__logo, .p-header__nav-item a").click(function () {
+    $(".p-header__logo, .p-header__nav-list li").click(function () {
       $(".p-header__hamburger").removeClass("is-active");
       $("body").removeClass("active");
       $(".js-drawer").fadeOut();
@@ -60,7 +60,9 @@ jQuery(function ($) {
 });
 
 // 問い合わせフォームチェックボックス
- jQuery('.mwform-checkbox-field-text').html('<a href="/contact" target="_blank" rel="noopener noreferrer" class="p-contact__confirm-underline">プライバシーポリシー</a>に同意する');
+jQuery(".mwform-checkbox-field-text").html(
+  '<a href="https://xs589126.xsrv.jp/codo_assist_test" target="_blank" rel="noopener noreferrer" class="p-contact__confirm-underline">プライバシーポリシー</a>に同意する'
+);
 
 // Swiper (FV)
 const Swiper1 = new Swiper(".swiper1", {

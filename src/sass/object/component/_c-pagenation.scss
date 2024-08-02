@@ -1,36 +1,33 @@
 @use "global" as *;
 
 .c-pagenation {
-    font-size: myrem(18);
-    font-weight: bold;
-    color: $gray2;
-    text-align: center;
+  font-size: myrem(18);
+  font-weight: bold;
+  color: $gray2;
+  text-align: center;
 }
 
 .c-pagenation .page,
 .c-pagenation .current {
-
-    margin: 0 myrem(13);
+  margin: 0 myrem(13);
 }
 
-
-
 .c-pagenation .current {
-    color: $red;
-    border-bottom: 2px solid $red ;
+  color: $red;
+  border-bottom: 2px solid $red;
 }
 
 .c-pagenation .previouspostslink,
 .c-pagenation .nextpostslink {
-    padding: myrem(2) myrem(10);
-    color: $white;
-    background-color: $red;
+  padding: myrem(2) myrem(10);
+  color: $white;
+  background-color: $red;
 }
 
 .c-pagenation .previouspostslink {
-    margin-right: myrem(31);
+  margin-right: myrem(31);
 }
 
 .c-pagenation .nextpostslink {
-margin-left: myrem(31);
+  margin-left: myrem(31);
 }

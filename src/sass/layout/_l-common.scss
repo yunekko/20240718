@@ -10,11 +10,9 @@
 }
 
 .l-common-company {
-    padding-top: myrem(15);
-  padding-bottom: myrem(60);
+  padding-top: myrem(15);
   @include mq(md) {
     padding-top: myrem(19);
-    padding-bottom: 0;
   }
 }
 
@@ -27,8 +25,8 @@
 }
 
 .l-common-contact {
-  padding-top: myrem(35); //テキトー
-  padding-bottom: myrem(50); //テキトー
+  padding-top: myrem(35);
+  padding-bottom: myrem(50);
   @include mq(md) {
     padding-top: myrem(70);
     padding-bottom: myrem(99);
